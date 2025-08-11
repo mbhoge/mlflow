@@ -5,6 +5,9 @@ For more information about MLflow Tracing, see: https://mlflow.org/docs/latest/l
 """
 
 import os
+import dotenv
+
+dotenv.load_dotenv()
 
 import anthropic
 
@@ -14,7 +17,10 @@ import mlflow
 mlflow.anthropic.autolog()
 
 # Configure your API key.
-client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+api_key = os.environ.get("ANTHROPIC_API_KEY")
+if not api_key:
+    raise ValueError("ANTHROPIC_API_KEY environment variable is not set. Please set it with your Anthropic API key.")
+client = anthropic.Anthropic(api_key=api_key)
 
 # Use the create method to create new message.
 message = client.messages.create(
