@@ -1,0 +1,14 @@
+artifact_uri: file:///home/mbhoge/mlflow/mlruns/616464936751162181/0f40c7d21e504518a633a6894fe606a4/artifacts
+end_time: 1754888005220
+entry_point_name: ''
+experiment_id: '616464936751162181'
+lifecycle_stage: active
+run_id: 0f40c7d21e504518a633a6894fe606a4
+run_name: capricious-hound-349
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754887898456
+status: 3
+tags: []
+user_id: mbhoge
