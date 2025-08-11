@@ -1,0 +1,8 @@
+mlflow
+numpy
+httpx
+distro
+python-dotenv
+fonttools
+charset-normalizer
+alembic
